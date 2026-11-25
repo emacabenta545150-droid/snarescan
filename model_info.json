@@ -1,0 +1,70 @@
+{
+  "base_model": "distilbert-base-uncased",
+  "training_data": "Enron-v2 (70%) + E-PhishLLM train split (60%)",
+  "seed": 42,
+  "train_rows": 13599,
+  "max_length": 512,
+  "dev_threshold": 0.2404177337884903,
+  "test_n": 3451,
+  "run_config_sha256": "5c8f6b59119fa00b50688f45a6dcec05032fbaebb6868f728225f191474cc137",
+  "dataset_sha256": "0377304568def38dabebe165756b22713da728fe98c2af7b1c6ea65a95b05520",
+  "test_at_0.5": {
+    "accuracy": 0.9959432048681541,
+    "f1_binary_phishing": 0.9961046188091264,
+    "f1_macro": 0.9959362271796539,
+    "precision_phishing": 0.9972144846796658,
+    "recall_phishing": 0.9949972206781545,
+    "false_positive_rate": 0.003026634382566586,
+    "false_negative_rate": 0.005002779321845469,
+    "confusion_matrix": [
+      [
+        1647,
+        5
+      ],
+      [
+        9,
+        1790
+      ]
+    ],
+    "auroc": 0.9998936724330304
+  },
+  "test_at_dev_threshold": {
+    "accuracy": 0.995653433787308,
+    "f1_binary_phishing": 0.9958275382475661,
+    "f1_macro": 0.9956458525831118,
+    "precision_phishing": 0.9966592427616926,
+    "recall_phishing": 0.9949972206781545,
+    "false_positive_rate": 0.0036319612590799033,
+    "false_negative_rate": 0.005002779321845469,
+    "confusion_matrix": [
+      [
+        1646,
+        6
+      ],
+      [
+        9,
+        1790
+      ]
+    ],
+    "auroc": 0.9998936724330304
+  },
+  "enron_holdout_at_0.5": {
+    "accuracy": 0.9871125043538836,
+    "f1_binary_phishing": 0.9868092691622103,
+    "f1_macro": 0.9871056900799136,
+    "precision_phishing": 0.9892780557541101,
+    "recall_phishing": 0.984352773826458,
+    "false_positive_rate": 0.010238907849829351,
+    "false_negative_rate": 0.015647226173541962,
+    "confusion_matrix": [
+      [
+        1450,
+        15
+      ],
+      [
+        22,
+        1384
+      ]
+    ]
+  }
+}
